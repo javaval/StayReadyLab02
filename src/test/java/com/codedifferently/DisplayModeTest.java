@@ -7,4 +7,42 @@ import static org.junit.Assert.*;
 
 public class DisplayModeTest {
     
+    @Test
+    public void switchDisplayModeTest(){
+        //Given 
+        DisplayMode dm = new DisplayMode();
+        dm.switchDisplayMode();
+    
+        String expected = "octal";
+    
+        //When
+        String actual = dm.getMode();
+        //Then 
+        Assert.assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void switcDisplayModeTest(){
+
+
+        //Given 
+        DisplayMode dm = new DisplayMode();
+        dm.switcDisplayMode("octal");
+        String expected = "octal";
+        //When
+        String actual = dm.getMode();
+        //Then 
+        Assert.assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void getMode(){
+        
+        DisplayMode dm = new DisplayMode();
+        String expected = dm.getMode();
+        Assert.assertEquals(expected, dm.getMode());
+
+    }
 }
