@@ -14,4 +14,10 @@ public class SciCalculatorTest
     {
         assertTrue( true );
     }
+
+    @Test
+    public void shouldAnswerWithTrue()
+    {
+        assertTrue( true );
+    }
 }

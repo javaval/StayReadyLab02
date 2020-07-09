@@ -9,14 +9,16 @@ public class DisplayModeTest {
     
     @Test
     public void switchDisplayModeTest(){
-        //Given 
-        DisplayMode dm = new DisplayMode();
+         
+        DisplayMode display = new DisplayMode();
         dm.switchDisplayMode();
-    
+        dm.switchDisplayMode();
         String expected = "octal";
     
         //When
-        String actual = dm.getMode();
+        String actual = display.getMode();
+       
+    
         //Then 
         Assert.assertEquals(expected, actual);
 

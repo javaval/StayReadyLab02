@@ -12,10 +12,12 @@ public class DisplayMode {
 
     // + switchDisplayMode(): void
     public void switchDisplayMode(){
-          i++; 
+          i++;
+
           if(i == 4){
               i = 0;
           }
+
           whichMode = displayModeList[i];
     }
 

@@ -28,4 +28,8 @@ public class CoreFeatures extends Display{
         return getCurrentValue() * num ;
     }
 
+    public double Exp(double num){
+        return Math.pow(getCurrentValue(), num);
+    }
+
 }

@@ -8,12 +8,14 @@ public class CoreFeaturesTest {
 
     @Test
     public void addTest(){
-        //Given 
+        //Given : Given the informarion we already have, ex: Our Object...
         CoreFeatures cf = new CoreFeatures();
-        Double expected = 6;
-        //When
-        Double actual =  cf.add(5);
-        //Then 
+        //When : When we do this action...
+
+        Double actual =  cf.add(5.0); // action we're testing 
+        Double expected = 5.0;  //expected outcome
+
+        //Then : Then it is assumed that...
         Assert.assertEquals(expected, actual, 0);
 
     }
@@ -28,9 +30,13 @@ public class CoreFeaturesTest {
 
     @Test
     public void divideTest(){
-        //Given 
-        //When
+        //Given
+        CoreFeatures cf = new CoreFeatures();
+        Double expected = 6; 
+        Double actual =  cf.divide(5);
         //Then 
+        Assert.assertEquals(expected, actual, 0);
+
 
     }
 
@@ -44,10 +50,11 @@ public class CoreFeaturesTest {
     }
     @Test
     public void ExpTest(){
-        //Given 
-        //When
+        CoreFeatures cf = new CoreFeatures();
+        Double expected = 125.0; 
+        Double actual =  cf.Exp(5);
         //Then 
-
+        Assert.assertEquals(expected, actual, 0);
     }
 
     @Test
